@@ -1,0 +1,104 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E9C9A0"/>
+      <stop offset="45%" stop-color="#E3B896"/>
+      <stop offset="100%" stop-color="#D9A98F"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F6DFA8"/>
+      <stop offset="100%" stop-color="#EFC77E"/>
+    </linearGradient>
+    <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8E7CA3"/>
+      <stop offset="100%" stop-color="#6E5A96"/>
+    </linearGradient>
+    <linearGradient id="rowShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5E4A85"/>
+      <stop offset="100%" stop-color="#4A3A6B"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="600" fill="url(#sky)"/>
+  <circle cx="1000" cy="150" r="70" fill="url(#sun)" opacity="0.85"/>
+
+  <path d="M0 260 Q 300 200 600 250 T 1200 230 L1200 340 L0 340 Z" fill="url(#hillFar)" opacity="0.55"/>
+
+  <path d="M0 300 Q 200 260 400 300 T 800 290 T 1200 300 L1200 600 L0 600 Z" fill="#3E3358"/>
+
+  <g opacity="0.95">
+    <path d="M0 340 Q 300 320 600 340 T 1200 335 L1200 375 L0 375 Z" fill="url(#rowShade)"/>
+    <path d="M0 390 Q 300 368 600 390 T 1200 385 L1200 425 L0 425 Z" fill="url(#rowShade)"/>
+    <path d="M0 440 Q 300 415 600 440 T 1200 435 L1200 478 L0 478 Z" fill="url(#rowShade)"/>
+    <path d="M0 495 Q 300 468 600 495 T 1200 490 L1200 535 L0 535 Z" fill="url(#rowShade)"/>
+    <path d="M0 550 Q 300 522 600 550 T 1200 545 L1200 600 L0 600 Z" fill="#332950"/>
+  </g>
+
+  <g fill="#7A5FA8">
+    <ellipse cx="60" cy="352" rx="16" ry="9"/>
+    <ellipse cx="140" cy="348" rx="16" ry="9"/>
+    <ellipse cx="220" cy="352" rx="16" ry="9"/>
+    <ellipse cx="300" cy="356" rx="16" ry="9"/>
+    <ellipse cx="380" cy="352" rx="16" ry="9"/>
+    <ellipse cx="460" cy="348" rx="16" ry="9"/>
+    <ellipse cx="540" cy="352" rx="16" ry="9"/>
+    <ellipse cx="620" cy="356" rx="16" ry="9"/>
+    <ellipse cx="700" cy="352" rx="16" ry="9"/>
+    <ellipse cx="780" cy="348" rx="16" ry="9"/>
+    <ellipse cx="860" cy="352" rx="16" ry="9"/>
+    <ellipse cx="940" cy="356" rx="16" ry="9"/>
+    <ellipse cx="1020" cy="352" rx="16" ry="9"/>
+    <ellipse cx="1100" cy="348" rx="16" ry="9"/>
+    <ellipse cx="1180" cy="352" rx="16" ry="9"/>
+  </g>
+
+  <g fill="#8B6EBF">
+    <ellipse cx="30" cy="404" rx="19" ry="11"/>
+    <ellipse cx="120" cy="399" rx="19" ry="11"/>
+    <ellipse cx="210" cy="405" rx="19" ry="11"/>
+    <ellipse cx="300" cy="400" rx="19" ry="11"/>
+    <ellipse cx="390" cy="406" rx="19" ry="11"/>
+    <ellipse cx="480" cy="400" rx="19" ry="11"/>
+    <ellipse cx="570" cy="405" rx="19" ry="11"/>
+    <ellipse cx="660" cy="399" rx="19" ry="11"/>
+    <ellipse cx="750" cy="405" rx="19" ry="11"/>
+    <ellipse cx="840" cy="400" rx="19" ry="11"/>
+    <ellipse cx="930" cy="406" rx="19" ry="11"/>
+    <ellipse cx="1020" cy="400" rx="19" ry="11"/>
+    <ellipse cx="1110" cy="405" rx="19" ry="11"/>
+    <ellipse cx="1200" cy="400" rx="19" ry="11"/>
+  </g>
+
+  <g fill="#A587D1">
+    <ellipse cx="70" cy="456" rx="23" ry="13"/>
+    <ellipse cx="180" cy="450" rx="23" ry="13"/>
+    <ellipse cx="290" cy="457" rx="23" ry="13"/>
+    <ellipse cx="400" cy="451" rx="23" ry="13"/>
+    <ellipse cx="510" cy="458" rx="23" ry="13"/>
+    <ellipse cx="620" cy="451" rx="23" ry="13"/>
+    <ellipse cx="730" cy="457" rx="23" ry="13"/>
+    <ellipse cx="840" cy="450" rx="23" ry="13"/>
+    <ellipse cx="950" cy="458" rx="23" ry="13"/>
+    <ellipse cx="1060" cy="451" rx="23" ry="13"/>
+    <ellipse cx="1170" cy="457" rx="23" ry="13"/>
+  </g>
+
+  <g fill="#BBA0DE">
+    <ellipse cx="40" cy="512" rx="27" ry="15"/>
+    <ellipse cx="170" cy="505" rx="27" ry="15"/>
+    <ellipse cx="300" cy="513" rx="27" ry="15"/>
+    <ellipse cx="430" cy="506" rx="27" ry="15"/>
+    <ellipse cx="560" cy="513" rx="27" ry="15"/>
+    <ellipse cx="690" cy="505" rx="27" ry="15"/>
+    <ellipse cx="820" cy="513" rx="27" ry="15"/>
+    <ellipse cx="950" cy="506" rx="27" ry="15"/>
+    <ellipse cx="1080" cy="513" rx="27" ry="15"/>
+    <ellipse cx="1200" cy="506" rx="27" ry="15"/>
+  </g>
+
+  <g opacity="0.5" fill="#2F2748">
+    <path d="M980 260 Q985 220 992 260 Z"/>
+    <path d="M1010 265 Q1016 230 1023 265 Z"/>
+    <path d="M1040 258 Q1045 225 1051 258 Z"/>
+  </g>
+</svg>
