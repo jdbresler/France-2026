@@ -1,0 +1,58 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mstmSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7C93A8"/>
+      <stop offset="55%" stop-color="#A8B8C4"/>
+      <stop offset="100%" stop-color="#D9C9A8"/>
+    </linearGradient>
+    <linearGradient id="mstmWater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9BB0BD"/>
+      <stop offset="100%" stop-color="#6E828E"/>
+    </linearGradient>
+    <linearGradient id="mstmRock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5E5648"/>
+      <stop offset="100%" stop-color="#403A30"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="600" fill="url(#mstmSky)"/>
+
+  <path d="M0 400 Q 300 385 600 400 T 1200 395 L1200 600 L0 600 Z" fill="url(#mstmWater)"/>
+  <g stroke="#E8EDEF" stroke-width="2" opacity="0.35" fill="none">
+    <path d="M100 430 Q 130 425 160 430"/>
+    <path d="M300 445 Q 335 440 370 445"/>
+    <path d="M700 435 Q 735 430 770 435"/>
+    <path d="M900 450 Q 935 445 970 450"/>
+  </g>
+
+  <!-- island rock base -->
+  <path d="M470 400 C 480 350, 500 320, 540 305 C 570 295, 600 300, 615 285 C 630 270, 625 250, 645 240 C 660 232, 675 240, 685 255 C 700 250, 715 260, 715 280 C 730 290, 745 310, 740 335 C 760 350, 765 375, 750 400 Z"
+    fill="url(#mstmRock)"/>
+
+  <!-- village buildings, stacked -->
+  <g fill="#7A7062">
+    <rect x="565" y="290" width="20" height="40"/>
+    <rect x="590" y="278" width="18" height="52"/>
+    <rect x="612" y="268" width="16" height="62"/>
+    <rect x="632" y="258" width="18" height="72"/>
+    <rect x="655" y="250" width="16" height="80"/>
+    <rect x="675" y="260" width="18" height="70"/>
+  </g>
+
+  <!-- abbey spire -->
+  <g>
+    <rect x="638" y="150" width="22" height="100" fill="#6B6255"/>
+    <path d="M638 150 L 649 100 L 660 150 Z" fill="#5A5245"/>
+    <line x1="649" y1="100" x2="649" y2="80" stroke="#5A5245" stroke-width="3"/>
+    <circle cx="649" cy="75" r="5" fill="#5A5245"/>
+  </g>
+
+  <!-- causeway -->
+  <path d="M300 480 Q 450 450 560 405" stroke="#8A8272" stroke-width="10" fill="none" opacity="0.6" stroke-linecap="round"/>
+
+  <!-- birds -->
+  <g stroke="#4A5560" stroke-width="2" fill="none" opacity="0.5">
+    <path d="M150 150 Q 160 142 170 150 Q 180 142 190 150"/>
+    <path d="M220 190 Q 228 184 236 190 Q 244 184 252 190"/>
+  </g>
+</svg>
