@@ -2,7 +2,7 @@
 
 This is your whole website: one HTML file, plus the PDFs/MP3s sitting right alongside it in the same repo. No database, no accounts, no monthly bill, no subfolders to worry about.
 
-**Current status:** Briefing I is live. Briefings II–VIII are on the page as "coming soon" until you activate them. The photo album link and route map are already wired up.
+**Current status:** Briefings I, III, IV, V, and VI are live. Briefing II and VII (Reflections) are on the page as "coming soon" until you activate them. The photo album link, route map, and itinerary link bar are already wired up.
 
 ## One-time setup (if you haven't already)
 
@@ -18,7 +18,7 @@ Every briefing already has a slot on the page, greyed out with "Coming soon" unt
 **1. Upload the two new files** into the repo root, named to match the existing pattern:
 - `briefing-2.pdf`
 - `briefing-2.mp3`
-(then `briefing-3.pdf` / `.mp3`, and so on through `briefing-8`)
+(then `briefing-3.pdf` / `.mp3`, and so on through `briefing-7`)
 
 **2. Open `index.html`**, search for `Briefing II` (or III, IV...). You'll find a block like this:
 ```html
@@ -108,3 +108,24 @@ The tracking script is already in `index.html`, right before the closing `</body
 <script data-goatcounter="https://jdbresler.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 ```
 No action needed — it'll start logging visits as soon as the updated `index.html` is live. It can take about 10 seconds for a pageview to appear in the dashboard, and ad blockers may prevent some visits from being counted (a normal tradeoff with any lightweight analytics tool).
+
+## Activating the itinerary PDF (top-of-page bar)
+
+Right below the hero, there's a bar reading "Full trip itinerary" with a greyed-out "Download the PDF" button. To activate it:
+
+1. Upload `itinerary.pdf` to the repo root (same place as everything else).
+2. In `index.html`, find:
+   ```html
+   <div class="itinerary-bar">
+     <div class="itinerary-bar-text">
+       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+       Full trip itinerary
+     </div>
+     <span class="btn disabled">Download the PDF — coming soon</span>
+   </div>
+   ```
+   Replace the `<span class="btn disabled">` line with:
+   ```html
+   <a class="btn primary" href="itinerary.pdf" target="_blank" rel="noopener">Download the PDF</a>
+   ```
+3. Re-upload `index.html`.
