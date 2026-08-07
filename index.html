@@ -402,13 +402,19 @@
   }
 
   /* ---------- ITINERARY BAR (top of page) ---------- */
+  .itinerary-intro{
+    margin: clamp(1.5rem, 4vw, 2.5rem) 0 0.9rem;
+    color: var(--ink-soft);
+    font-size: 0.98rem;
+    max-width: 62ch;
+  }
   .itinerary-bar{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
     flex-wrap: wrap;
-    margin: clamp(1.5rem, 4vw, 2.5rem) 0;
+    margin: 0 0 clamp(1.5rem, 4vw, 2.5rem);
     padding: 1rem 1.3rem;
     background: var(--paper-deep);
     border: 1px solid var(--line);
@@ -551,7 +557,7 @@
     <div class="stat-row">
       <div class="stat"><div class="n">12</div><div class="l">Travelers</div></div>
       <div class="stat"><div class="n">8</div><div class="l">Cousins, ages 7&ndash;17</div></div>
-      <div class="stat"><div class="n">3</div><div class="l">Acts: Atlantic&nbsp;France, Paris, Provence</div></div>
+      <div class="stat"><div class="n">3</div><div class="l">Acts: Atlantic&nbsp;France, Paris, Provence&nbsp;&amp;&nbsp;the&nbsp;Riviera</div></div>
       <div class="stat"><div class="n">7</div><div class="l">Briefings</div></div>
     </div>
   </div>
@@ -559,12 +565,14 @@
 
 <main class="wrap">
 
+  <p class="itinerary-intro">Kate put together an incredible amount of planning for this trip, and we're happy to share every bit of it — here's the full day-by-day itinerary for anyone who wants the complete picture.</p>
+
   <div class="itinerary-bar">
     <div class="itinerary-bar-text">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
       Full trip itinerary
     </div>
-    <span class="btn disabled">Download the PDF — coming soon</span>
+    <a class="btn primary" href="itinerary.pdf" target="_blank" rel="noopener">Download the PDF</a>
   </div>
 
   <div class="section-head">
